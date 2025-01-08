@@ -1,0 +1,2063 @@
+<?php
+
+return [
+    'acl' => [
+        'leads'           => 'Prospects',
+        'lead'            => 'Prospect',
+        'quotes'          => 'Devis',
+        'mail'            => 'Mail',
+        'inbox'           => 'Boîte de réception',
+        'draft'           => 'Brouillon',
+        'outbox'          => 'Boîte d’envoi',
+        'sent'            => 'Envoyés',
+        'trash'           => 'Corbeille',
+        'activities'      => 'Activités',
+        'webhook'         => 'Webhook',
+        'contacts'        => 'Contacts',
+        'persons'         => 'Personnes',
+        'organizations'   => 'Organisations',
+        'products'        => 'Produits',
+        'settings'        => 'Paramètres',
+        'groups'          => 'Groupes',
+        'roles'           => 'Rôles',
+        'users'           => 'Utilisateurs',
+        'user'            => 'Utilisateur',
+        'automation'      => 'Automatisation',
+        'attributes'      => 'Attributs',
+        'pipelines'       => 'Pipelines',
+        'sources'         => 'Sources',
+        'types'           => 'Types',
+        'email-templates' => 'Modèles d’Email',
+        'workflows'       => 'Flux de travail',
+        'other-settings'  => 'Autres Paramètres',
+        'tags'            => 'Tags',
+        'configuration'   => 'Configuration',
+        'create'          => 'Créer',
+        'edit'            => 'Éditer',
+        'view'            => 'Voir',
+        'print'           => 'Imprimer',
+        'delete'          => 'Supprimer',
+        'export'          => 'Exporter',
+        'mass-delete'     => 'Suppression en Masse',
+    ],
+
+    'users' => [
+        'activate-warning' => 'Votre compte n\'est pas encore activé. Veuillez contacter l\'administrateur.',
+        'login-error'      => 'Les identifiants ne correspondent pas à nos enregistrements.',
+        'not-permission'   => 'Vous n\'avez pas la permission d\'accéder au panneau d\'administration.',
+
+        'login' => [
+            'email'                => 'Adresse Email',
+            'forget-password-link' => 'Mot de passe oublié ?',
+            'password'             => 'Mot de passe',
+            'submit-btn'           => 'Se Connecter',
+            'title'                => 'Se Connecter',
+        ],
+
+        'forget-password' => [
+            'create' => [
+                'email'           => 'Email Enregistré',
+                'email-not-exist' => 'Email Inexistant',
+                'page-title'      => 'Mot de passe oublié',
+                'reset-link-sent' => 'Lien de réinitialisation du mot de passe envoyé',
+                'sign-in-link'    => 'Retourner à la connexion ?',
+                'submit-btn'      => 'Réinitialiser',
+                'title'           => 'Récupérer le Mot de Passe',
+            ],
+        ],
+
+        'reset-password' => [
+            'back-link-title'  => 'Retourner à la connexion ?',
+            'confirm-password' => 'Confirmer le Mot de passe',
+            'email'            => 'Email Enregistré',
+            'password'         => 'Mot de passe',
+            'submit-btn'       => 'Réinitialiser le Mot de Passe',
+            'title'            => 'Réinitialiser le Mot de Passe',
+        ],
+    ],
+
+    'account' => [
+        'edit' => [
+            'back-btn'          => 'Retour',
+            'change-password'   => 'Changer le Mot de Passe',
+            'confirm-password'  => 'Confirmer le Mot de passe',
+            'current-password'  => 'Mot de Passe Actuel',
+            'email'             => 'Email',
+            'general'           => 'Général',
+            'invalid-password'  => 'Le mot de passe actuel que vous avez entré est incorrect.',
+            'name'              => 'Nom',
+            'password'          => 'Mot de passe',
+            'profile-image'     => 'Image de Profil',
+            'save-btn'          => 'Enregistrer le Compte',
+            'title'             => 'Mon Compte',
+            'update-success'    => 'Compte mis à jour avec succès',
+            'upload-image-info' => 'Téléchargez une image de profil (110px X 110px) au format PNG ou JPG',
+        ],
+    ],
+
+    'components' => [
+        'activities' => [
+            'actions' => [
+                'mail' => [
+                    'btn'          => 'Mail',
+                    'title'        => 'Composer un Mail',
+                    'to'           => 'À',
+                    'enter-emails' => 'Appuyez sur Entrée pour ajouter des emails',
+                    'cc'           => 'CC',
+                    'bcc'          => 'BCC',
+                    'subject'      => 'Sujet',
+                    'send-btn'     => 'Envoyer',
+                    'message'      => 'Message',
+                ],
+
+                'file' => [
+                    'btn'           => 'Fichier',
+                    'title'         => 'Ajouter un Fichier',
+                    'title-control' => 'Titre',
+                    'name'          => 'Nom',
+                    'description'   => 'Description',
+                    'file'          => 'Fichier',
+                    'save-btn'      => 'Enregistrer le Fichier',
+                ],
+
+                'note' => [
+                    'btn'      => 'Note',
+                    'title'    => 'Ajouter une Note',
+                    'comment'  => 'Commentaire',
+                    'save-btn' => 'Enregistrer la Note',
+                ],
+
+                'activity' => [
+                    'btn'           => 'Activité',
+                    'title'         => 'Ajouter une Activité',
+                    'title-control' => 'Titre',
+                    'description'   => 'Description',
+                    'schedule-from' => 'Prévoir De',
+                    'schedule-to'   => 'Prévoir Jusqu\'à',
+                    'location'      => 'Lieu',
+                    'call'          => 'Appel',
+                    'meeting'       => 'Réunion',
+                    'lunch'         => 'Déjeuner',
+                    'save-btn'      => 'Enregistrer l\'Activité',
+
+                    'participants' => [
+                        'title'       => 'Participants',
+                        'placeholder' => 'Tapez pour chercher des participants',
+                        'users'       => 'Utilisateurs',
+                        'persons'     => 'Personnes',
+                        'no-results'  => 'Aucun résultat trouvé...',
+                    ],
+                ],
+            ],
+
+            'index' => [
+                'from'         => 'De',
+                'to'           => 'À',
+                'cc'           => 'Cc',
+                'bcc'          => 'Bcc',
+                'all'          => 'Tout',
+                'planned'      => 'Prévu',
+                'calls'        => 'Appels',
+                'meetings'     => 'Réunions',
+                'lunches'      => 'Déjeuners',
+                'files'        => 'Fichiers',
+                'quotes'       => 'Devis',
+                'notes'        => 'Notes',
+                'emails'       => 'Emails',
+                'change-log'   => 'Historique des modifications',
+                'by-user'      => 'Par :user',
+                'scheduled-on' => 'Prévu le',
+                'location'     => 'Lieu',
+                'participants' => 'Participants',
+                'mark-as-done' => 'Marquer comme Terminé',
+                'delete'       => 'Supprimer',
+                'edit'         => 'Éditer',
+                'view'         => 'Voir',
+                'unlink'       => 'Dissocier',
+                'empty'        => 'Vide',
+
+                'empty-placeholders' => [
+                    'all' => [
+                        'title'       => 'Aucune Activité Trouvée',
+                        'description' => 'Aucune activité trouvée pour cela. Vous pouvez ajouter des activités en cliquant sur le bouton dans le panneau de gauche.',
+                    ],
+
+                    'planned' => [
+                        'title'       => 'Aucune Activité Prévue Trouvée',
+                        'description' => 'Aucune activité prévue trouvée pour cela. Vous pouvez ajouter des activités prévues en cliquant sur le bouton dans le panneau de gauche.',
+                    ],
+
+                    'notes' => [
+                        'title'       => 'Aucune Note Trouvée',
+                        'description' => 'Aucune note trouvée pour cela. Vous pouvez ajouter des notes en cliquant sur le bouton dans le panneau de gauche.',
+                    ],
+
+                    'calls' => [
+                        'title'       => 'Aucun Appel Trouvé',
+                        'description' => 'Aucun appel trouvé pour cela. Vous pouvez ajouter des appels en cliquant sur le bouton dans le panneau de gauche.',
+                    ],
+
+                    'meetings' => [
+                        'title'       => 'Aucune Réunion Trouvée',
+                        'description' => 'Aucune réunion trouvée pour cela. Vous pouvez ajouter des réunions en cliquant sur le bouton dans le panneau de gauche.',
+                    ],
+
+                    'lunches' => [
+                        'title'       => 'Aucun Déjeuner Trouvé',
+                        'description' => 'Aucun déjeuner trouvé pour cela. Vous pouvez ajouter des déjeuners en cliquant sur le bouton dans le panneau de gauche.',
+                    ],
+
+                    'files' => [
+                        'title'       => 'Aucun Fichier Trouvé',
+                        'description' => 'Aucun fichier trouvé pour cela. Vous pouvez ajouter des fichiers en cliquant sur le bouton dans le panneau de gauche.',
+                    ],
+
+                    'emails' => [
+                        'title'       => 'Aucun Email Trouvé',
+                        'description' => 'Aucun email trouvé pour cela. Vous pouvez ajouter des emails en cliquant sur le bouton dans le panneau de gauche.',
+                    ],
+
+                    'system' => [
+                        'title'       => 'Aucun Historique de Modifications Trouvé',
+                        'description' => 'Aucun historique de modifications trouvé pour cela.',
+                    ],
+                ],
+            ],
+        ],
+
+        'media' => [
+            'images' => [
+                'add-image-btn'     => 'Ajouter une Image',
+                'ai-add-image-btn'  => 'Magie AI',
+                'allowed-types'     => 'png, jpeg, jpg',
+                'not-allowed-error' => 'Seuls les fichiers images (.jpeg, .jpg, .png, ...) sont autorisés.',
+
+                'placeholders' => [
+                    'front'     => 'Avant',
+                    'next'      => 'Suivant',
+                    'size'      => 'Taille',
+                    'use-cases' => 'Cas d\'utilisation',
+                    'zoom'      => 'Zoom',
+                ],
+            ],
+
+            'videos' => [
+                'add-video-btn'     => 'Ajouter une Vidéo',
+                'allowed-types'     => 'mp4, webm, mkv',
+                'not-allowed-error' => 'Seuls les fichiers vidéo (.mp4, .mov, .ogg ...) sont autorisés.',
+            ],
+        ],
+
+        'datagrid' => [
+            'index' => [
+                'no-records-selected'              => 'Aucun enregistrement n\'a été sélectionné.',
+                'must-select-a-mass-action-option' => 'Vous devez sélectionner une option d\'action de masse.',
+                'must-select-a-mass-action'        => 'Vous devez sélectionner une action de masse.',
+            ],
+
+            'toolbar' => [
+                'length-of' => ':length de',
+                'of'        => 'de',
+                'per-page'  => 'Par Page',
+                'results'   => ':total Résultats',
+                'delete'    => 'Supprimer',
+                'selected'  => ':total Articles Sélectionnés',
+
+                'mass-actions' => [
+                    'submit'        => 'Soumettre',
+                    'select-option' => 'Sélectionner une Option',
+                    'select-action' => 'Sélectionner une Action',
+                ],
+
+                'filter' => [
+                    'apply-filters-btn' => 'Appliquer les Filtres',
+                    'back-btn'          => 'Retour',
+                    'create-new-filter' => 'Créer un Nouveau Filtre',
+                    'custom-filters'    => 'Filtres Personnalisés',
+                    'delete-error'      => 'Une erreur est survenue lors de la suppression du filtre, veuillez réessayer.',
+                    'delete-success'    => 'Filtre supprimé avec succès.',
+                    'empty-description' => 'Aucun filtre sélectionné disponible à sauvegarder. Veuillez sélectionner des filtres à sauvegarder.',
+                    'empty-title'       => 'Ajouter des Filtres à Sauvegarder',
+                    'name'              => 'Nom',
+                    'quick-filters'     => 'Filtres Rapides',
+                    'save-btn'          => 'Sauvegarder',
+                    'save-filter'       => 'Sauvegarder le Filtre',
+                    'saved-success'     => 'Filtre sauvegardé avec succès.',
+                    'selected-filters'  => 'Filtres Sélectionnés',
+                    'title'             => 'Filtrer',
+                    'update'            => 'Mettre à jour',
+                    'update-filter'     => 'Mettre à jour le Filtre',
+                    'updated-success'   => 'Filtre mis à jour avec succès.',
+                ],
+
+                'search' => [
+                    'title' => 'Recherche',
+                ],
+            ],
+
+            'filters' => [
+                'select' => 'Sélectionner',
+                'title'  => 'Filtres',
+
+                'dropdown' => [
+                    'searchable' => [
+                        'at-least-two-chars' => 'Tapez au moins 2 caractères...',
+                        'no-results'         => 'Aucun résultat trouvé...',
+                    ],
+                ],
+
+                'custom-filters' => [
+                    'clear-all' => 'Tout Effacer',
+                    'title'     => 'Filtres Personnalisés',
+                ],
+
+                'boolean-options' => [
+                    'false' => 'Faux',
+                    'true'  => 'Vrai',
+                ],
+
+                'date-options' => [
+                    'last-month'        => 'Mois Dernier',
+                    'last-six-months'   => '6 Derniers Mois',
+                    'last-three-months' => '3 Derniers Mois',
+                    'this-month'        => 'Ce Mois',
+                    'this-week'         => 'Cette Semaine',
+                    'this-year'         => 'Cette Année',
+                    'today'             => 'Aujourd\'hui',
+                    'yesterday'         => 'Hier',
+                ],
+            ],
+
+            'table' => [
+                'actions'              => 'Actions',
+                'no-records-available' => 'Aucun Enregistrement Disponible.',
+            ],
+        ],
+
+        'modal' => [
+            'confirm' => [
+                'agree-btn'    => 'Accepter',
+                'disagree-btn' => 'Refuser',
+                'message'      => 'Êtes-vous sûr de vouloir effectuer cette action ?',
+                'title'        => 'Êtes-vous sûr ?',
+            ],
+        ],
+
+        'tags' => [
+            'index' => [
+                'title'          => 'Tags',
+                'added-tags'     => 'Tags Ajoutés',
+                'save-btn'       => 'Sauvegarder le Tag',
+                'placeholder'    => 'Tapez pour chercher des tags',
+                'add-tag'        => 'Ajouter ":term" ...',
+                'aquarelle-red'  => 'Rouge Aquarelle',
+                'crushed-cashew' => 'Noix de Cajou Écrasée',
+                'beeswax'        => 'Cire d’Abeille',
+                'lemon-chiffon'  => 'Chiffon Citron',
+                'snow-flurry'    => 'Flocon de Neige',
+                'honeydew'       => 'Honeydew',
+            ],
+        ],
+
+        'layouts' => [
+            'powered-by' => [
+                'description' => 'Propulsé par :builders, pour :customer.',
+            ],
+
+            'header' => [
+                'mega-search' => [
+                    'title'   => 'Recherche',
+
+                    'tabs' => [
+                        'leads'    => 'Prospects',
+                        'quotes'   => 'Devis',
+                        'persons'  => 'Personnes',
+                        'products' => 'Produits',
+                    ],
+
+                    'explore-all-products'          => 'Explorer tous les Produits',
+                    'explore-all-leads'             => 'Explorer tous les Prospects',
+                    'explore-all-contacts'          => 'Explorer tous les Contacts',
+                    'explore-all-quotes'            => 'Explorer tous les Devis',
+                    'explore-all-matching-products' => 'Explorer tous les produits correspondant à ":query" (:count)',
+                    'explore-all-matching-leads'    => 'Explorer tous les prospects correspondant à ":query" (:count)',
+                    'explore-all-matching-contacts' => 'Explorer tous les contacts correspondant à ":query" (:count)',
+                    'explore-all-matching-quotes'   => 'Explorer tous les devis correspondant à ":query" (:count)',
+                ],
+            ],
+        ],
+
+        'attributes' => [
+            'edit'   => [
+                'delete' => 'Supprimer',
+            ],
+
+            'lookup' => [
+                'click-to-add'    => 'Cliquer pour ajouter',
+                'search'          => 'Recherche',
+                'no-result-found' => 'Aucun résultat trouvé',
+                'search'          => 'Recherche...',
+            ],
+        ],
+
+        'lookup' => [
+            'click-to-add' => 'Cliquer pour Ajouter',
+            'no-results'   => 'Aucun Résultat Trouvé',
+            'add-as-new'   => 'Ajouter comme Nouveau',
+            'search'       => 'Recherche...',
+        ],
+
+        'flash-group' => [
+            'success' => 'Succès',
+            'error'   => 'Erreur',
+            'warning' => 'Avertissement',
+            'info'    => 'Info',
+        ],
+    ],
+
+    'quotes' => [
+        'index' => [
+            'title'          => 'Devis',
+            'create-btn'     => 'Créer un Devis',
+            'create-success' => 'Devis créé avec succès.',
+            'update-success' => 'Devis mis à jour avec succès.',
+            'delete-success' => 'Devis supprimé avec succès.',
+            'delete-failed'  => 'Le devis ne peut pas être supprimé.',
+
+            'datagrid' => [
+                'subject'        => 'Sujet',
+                'sales-person'   => 'Commercial',
+                'expired-at'     => 'Expire le',
+                'created-at'     => 'Créé le',
+                'expired-quotes' => 'Devis Expiré',
+                'person'         => 'Personne',
+                'subtotal'       => 'Sous-total',
+                'discount'       => 'Remise',
+                'tax'            => 'Taxe',
+                'adjustment'     => 'Ajustement',
+                'grand-total'    => 'Total Général',
+                'edit'           => 'Éditer',
+                'delete'         => 'Supprimer',
+                'print'          => 'Imprimer',
+            ],
+
+            'pdf' => [
+                'title'            => 'Devis',
+                'grand-total'      => 'Total Général',
+                'adjustment'       => 'Ajustement',
+                'discount'         => 'Remise',
+                'tax'              => 'Taxe',
+                'sub-total'        => 'Sous-total',
+                'amount'           => 'Montant',
+                'quantity'         => 'Quantité',
+                'price'            => 'Prix',
+                'product-name'     => 'Nom du Produit',
+                'sku'              => 'SKU',
+                'shipping-address' => 'Adresse de Livraison',
+                'billing-address'  => 'Adresse de Facturation',
+                'expired-at'       => 'Expire le',
+                'sales-person'     => 'Commercial',
+                'date'             => 'Date',
+                'quote-id'         => 'ID du Devis',
+            ],
+        ],
+
+        'create' => [
+            'title'          => 'Créer un Devis',
+            'save-btn'       => 'Enregistrer le Devis',
+            'quote-info'     => 'Informations sur le Devis',
+            'quote-info-info'=> 'Entrez les informations de base du devis.',
+            'address-info'   => 'Informations d\'Adresse',
+            'address-info-info' => 'Informations sur l\'adresse liée au devis.',
+            'quote-items'    => 'Articles du Devis',
+            'search-products'=> 'Rechercher des Produits',
+            'link-to-lead'   => 'Lier au Prospect',
+            'quote-item-info'=> 'Ajouter une demande de produit pour ce devis.',
+            'quote-name'     => 'Nom du Devis',
+            'quantity'       => 'Quantité',
+            'price'          => 'Prix',
+            'discount'       => 'Remise',
+            'tax'            => 'Taxe',
+            'total'          => 'Total',
+            'amount'         => 'Montant',
+            'add-item'       => '+ Ajouter un Article',
+            'sub-total'      => 'Sous-total (:symbol)',
+            'total-discount' => 'Remise (:symbol)',
+            'total-tax'      => 'Taxe (:symbol)',
+            'total-adjustment'=> 'Ajustement (:symbol)',
+            'grand-total'    => 'Total Général (:symbol)',
+            'discount-amount'=> 'Montant de la Remise',
+            'tax-amount'     => 'Montant de la Taxe',
+            'adjustment-amount'=> 'Montant de l\'Ajustement',
+            'product-name'   => 'Nom du Produit',
+            'action'         => 'Action',
+        ],
+
+        'edit' => [
+            'title'          => 'Éditer le Devis',
+            'save-btn'       => 'Enregistrer le Devis',
+            'quote-info'     => 'Informations sur le Devis',
+            'quote-info-info'=> 'Entrez les informations de base du devis.',
+            'address-info'   => 'Informations d\'Adresse',
+            'address-info-info' => 'Informations sur l\'adresse liée au devis.',
+            'quote-items'    => 'Articles du Devis',
+            'link-to-lead'   => 'Lier au Prospect',
+            'quote-item-info'=> 'Ajouter une demande de produit pour ce devis.',
+            'quote-name'     => 'Nom du Devis',
+            'quantity'       => 'Quantité',
+            'price'          => 'Prix',
+            'search-products'=> 'Rechercher des Produits',
+            'discount'       => 'Remise',
+            'tax'            => 'Taxe',
+            'total'          => 'Total',
+            'amount'         => 'Montant',
+            'add-item'       => '+ Ajouter un Article',
+            'sub-total'      => 'Sous-total (:symbol)',
+            'total-discount' => 'Remise (:symbol)',
+            'total-tax'      => 'Taxe (:symbol)',
+            'total-adjustment'=> 'Ajustement (:symbol)',
+            'grand-total'    => 'Total Général (:symbol)',
+            'discount-amount'=> 'Montant de la Remise',
+            'tax-amount'     => 'Montant de la Taxe',
+            'adjustment-amount'=> 'Montant de l\'Ajustement',
+            'product-name'   => 'Nom du Produit',
+            'action'         => 'Action',
+        ],
+    ],
+
+    'contacts' => [
+        'persons' => [
+            'index' => [
+                'title'          => 'Personnes',
+                'create-btn'     => 'Créer une Personne',
+                'create-success' => 'Personne créée avec succès.',
+                'update-success' => 'Personne mise à jour avec succès.',
+                'delete-success' => 'Personne supprimée avec succès.',
+                'delete-failed'  => 'La personne ne peut pas être supprimée.',
+
+                'datagrid' => [
+                    'contact-numbers'   => 'Numéros de Contact',
+                    'delete'            => 'Supprimer',
+                    'edit'              => 'Éditer',
+                    'emails'            => 'Emails',
+                    'id'                => 'ID',
+                    'view'              => 'Voir',
+                    'name'              => 'Nom',
+                    'organization-name' => 'Nom de l\'Organisation',
+                ],
+            ],
+
+            'view' => [
+                'title'              => ':name',
+                'about-person'       => 'À Propos de la Personne',
+                'about-organization' => 'À Propos de l\'Organisation',
+
+                'activities' => [
+                    'index' => [
+                        'all'          => 'Tout',
+                        'calls'        => 'Appels',
+                        'meetings'     => 'Réunions',
+                        'lunches'      => 'Déjeuners',
+                        'files'        => 'Fichiers',
+                        'quotes'       => 'Devis',
+                        'notes'        => 'Notes',
+                        'emails'       => 'Emails',
+                        'by-user'      => 'Par :user',
+                        'scheduled-on' => 'Prévu le',
+                        'location'     => 'Lieu',
+                        'participants' => 'Participants',
+                        'mark-as-done' => 'Marquer comme Terminé',
+                        'delete'       => 'Supprimer',
+                        'edit'         => 'Éditer',
+                    ],
+
+                    'actions' => [
+                        'mail' => [
+                            'btn'      => 'Mail',
+                            'title'    => 'Composer un Mail',
+                            'to'       => 'À',
+                            'cc'       => 'CC',
+                            'bcc'      => 'BCC',
+                            'subject'  => 'Sujet',
+                            'send-btn' => 'Envoyer',
+                            'message'  => 'Message',
+                        ],
+
+                        'file' => [
+                            'btn'           => 'Fichier',
+                            'title'         => 'Ajouter un Fichier',
+                            'title-control' => 'Titre',
+                            'name'          => 'Nom du Fichier',
+                            'description'   => 'Description',
+                            'file'          => 'Fichier',
+                            'save-btn'      => 'Enregistrer le Fichier',
+                        ],
+
+                        'note' => [
+                            'btn'      => 'Note',
+                            'title'    => 'Ajouter une Note',
+                            'comment'  => 'Commentaire',
+                            'save-btn' => 'Enregistrer la Note',
+                        ],
+
+                        'activity' => [
+                            'btn'           => 'Activité',
+                            'title'         => 'Ajouter une Activité',
+                            'title-control' => 'Titre',
+                            'description'   => 'Description',
+                            'schedule-from' => 'Prévoir De',
+                            'schedule-to'   => 'Prévoir Jusqu\'à',
+                            'location'      => 'Lieu',
+                            'call'          => 'Appel',
+                            'meeting'       => 'Réunion',
+                            'lunch'         => 'Déjeuner',
+                            'save-btn'      => 'Enregistrer l\'Activité',
+                        ],
+                    ],
+                ],
+            ],
+
+            'create' => [
+                'title'    => 'Créer une Personne',
+                'save-btn' => 'Enregistrer la Personne',
+            ],
+
+            'edit' => [
+                'title'    => 'Éditer la Personne',
+                'save-btn' => 'Enregistrer la Personne',
+            ],
+        ],
+
+        'organizations' => [
+            'index' => [
+                'title'          => 'Organisations',
+                'create-btn'     => 'Créer une Organisation',
+                'create-success' => 'Organisation créée avec succès.',
+                'update-success' => 'Organisation mise à jour avec succès.',
+                'delete-success' => 'Organisation supprimée avec succès.',
+                'delete-failed'  => 'L\'organisation ne peut pas être supprimée.',
+
+                'datagrid' => [
+                    'delete'        => 'Supprimer',
+                    'edit'          => 'Éditer',
+                    'id'            => 'ID',
+                    'name'          => 'Nom',
+                    'persons-count' => 'Nombre de Personnes',
+                ],
+            ],
+
+            'create' => [
+                'title'    => 'Créer une Organisation',
+                'save-btn' => 'Enregistrer l\'Organisation',
+            ],
+
+            'edit' => [
+                'title'    => 'Éditer l\'Organisation',
+                'save-btn' => 'Enregistrer l\'Organisation',
+            ],
+        ],
+    ],
+
+    'products' => [
+        'index' => [
+            'title'          => 'Produits',
+            'create-btn'     => 'Créer un Produit',
+            'create-success' => 'Produit créé avec succès.',
+            'update-success' => 'Produit mis à jour avec succès.',
+            'delete-success' => 'Produit supprimé avec succès.',
+            'delete-failed'  => 'Le produit ne peut pas être supprimé.',
+
+            'datagrid'   => [
+                'allocated' => 'Alloué',
+                'delete'    => 'Supprimer',
+                'edit'      => 'Éditer',
+                'id'        => 'ID',
+                'in-stock'  => 'En Stock',
+                'name'      => 'Nom',
+                'on-hand'   => 'Disponible',
+                'price'     => 'Prix',
+                'sku'       => 'SKU',
+                'view'      => 'Voir',
+            ],
+        ],
+
+        'create' => [
+            'save-btn'  => 'Enregistrer les Produits',
+            'title'     => 'Créer des Produits',
+            'general'   => 'Général',
+            'price'     => 'Prix',
+        ],
+
+        'edit' => [
+            'title'     => 'Éditer les Produits',
+            'save-btn'  => 'Enregistrer les Produits',
+            'general'   => 'Général',
+            'price'     => 'Prix',
+        ],
+
+        'view' => [
+            'sku'         => 'SKU',
+            'all'         => 'Tout',
+            'notes'       => 'Notes',
+            'files'       => 'Fichiers',
+            'inventories' => 'Inventaire',
+            'change-logs' => 'Historique des modifications',
+
+            'attributes' => [
+                'about-product' => 'À Propos du Produit',
+            ],
+
+            'inventory' => [
+                'source'     => 'Source',
+                'in-stock'   => 'En Stock',
+                'allocated'  => 'Alloué',
+                'on-hand'    => 'Disponible',
+                'actions'    => 'Actions',
+                'assign'     => 'Assigner',
+                'add-source' => 'Ajouter une Source',
+                'location'   => 'Lieu',
+                'add-more'   => 'Ajouter Plus',
+                'save'       => 'Enregistrer',
+            ],
+        ],
+    ],
+
+    'settings' => [
+        'title' => 'Paramètres',
+
+        'groups' => [
+            'index' => [
+                'create-btn'        => 'Créer un Groupe',
+                'title'             => 'Groupes',
+                'create-success'    => 'Groupe créé avec succès.',
+                'update-success'    => 'Groupe mis à jour avec succès.',
+                'destroy-success'   => 'Groupe supprimé avec succès.',
+                'delete-failed'     => 'Le groupe ne peut pas être supprimé.',
+
+                'datagrid'   => [
+                    'delete'      => 'Supprimer',
+                    'description' => 'Description',
+                    'edit'        => 'Éditer',
+                    'id'          => 'ID',
+                    'name'        => 'Nom',
+                ],
+
+                'edit' => [
+                    'title' => 'Éditer le Groupe',
+                ],
+
+                'create' => [
+                    'name'        => 'Nom',
+                    'title'       => 'Créer un Groupe',
+                    'description' => 'Description',
+                    'save-btn'    => 'Enregistrer le Groupe',
+                ],
+            ],
+        ],
+
+        'roles' => [
+            'index' => [
+                'being-used'                => 'Le rôle ne peut pas être supprimé, car il est utilisé par un utilisateur admin.',
+                'create-btn'                => 'Créer des Rôles',
+                'create-success'            => 'Rôle créé avec succès.',
+                'current-role-delete-error' => 'Impossible de supprimer le rôle attribué à l\'utilisateur actuel.',
+                'delete-failed'             => 'Le rôle ne peut pas être supprimé.',
+                'delete-success'            => 'Rôle supprimé avec succès.',
+                'last-delete-error'         => 'Au moins un rôle est requis.',
+                'settings'                  => 'Paramètres',
+                'title'                     => 'Rôles',
+                'update-success'            => 'Rôle mis à jour avec succès.',
+                'user-define-error'         => 'Impossible de supprimer un rôle système.',
+
+                'datagrid'   => [
+                    'all'             => 'Tout',
+                    'custom'          => 'Personnalisé',
+                    'delete'          => 'Supprimer',
+                    'description'     => 'Description',
+                    'edit'            => 'Éditer',
+                    'id'              => 'ID',
+                    'name'            => 'Nom',
+                    'permission-type' => 'Type de Permission',
+                ],
+            ],
+
+            'create' => [
+                'access-control' => 'Contrôle d\'Accès',
+                'all'            => 'Tout',
+                'back-btn'       => 'Retour',
+                'custom'         => 'Personnalisé',
+                'description'    => 'Description',
+                'general'        => 'Général',
+                'name'           => 'Nom',
+                'permissions'    => 'Permissions',
+                'save-btn'       => 'Enregistrer le Rôle',
+                'title'          => 'Créer un Rôle',
+            ],
+
+            'edit' => [
+                'access-control' => 'Contrôle d\'Accès',
+                'all'            => 'Tout',
+                'back-btn'       => 'Retour',
+                'custom'         => 'Personnalisé',
+                'description'    => 'Description',
+                'general'        => 'Général',
+                'name'           => 'Nom',
+                'permissions'    => 'Permissions',
+                'save-btn'       => 'Enregistrer le Rôle',
+                'title'          => 'Éditer le Rôle',
+            ],
+        ],
+
+        'types' => [
+            'index' => [
+                'create-btn'     => 'Créer un Type',
+                'create-success' => 'Type créé avec succès.',
+                'delete-failed'  => 'Le type ne peut pas être supprimé.',
+                'delete-success' => 'Type supprimé avec succès.',
+                'title'          => 'Types',
+                'update-success' => 'Type mis à jour avec succès.',
+
+                'datagrid' => [
+                    'delete'      => 'Supprimer',
+                    'description' => 'Description',
+                    'edit'        => 'Éditer',
+                    'id'          => 'ID',
+                    'name'        => 'Nom',
+                ],
+
+                'create' => [
+                    'name'     => 'Nom',
+                    'save-btn' => 'Enregistrer le Type',
+                    'title'    => 'Créer un Type',
+                ],
+
+                'edit' => [
+                    'title' => 'Éditer le Type',
+                ],
+            ],
+        ],
+
+        'sources' => [
+            'index' => [
+                'create-btn'     => 'Créer une Source',
+                'create-success' => 'Source créée avec succès.',
+                'delete-failed'  => 'La source ne peut pas être supprimée.',
+                'delete-success' => 'Source supprimée avec succès.',
+                'title'          => 'Sources',
+                'update-success' => 'Source mise à jour avec succès.',
+
+                'datagrid' => [
+                    'delete' => 'Supprimer',
+                    'edit'   => 'Éditer',
+                    'id'     => 'ID',
+                    'name'   => 'Nom',
+                ],
+
+                'create' => [
+                    'name'     => 'Nom',
+                    'save-btn' => 'Enregistrer la Source',
+                    'title'    => 'Créer une Source',
+                ],
+
+                'edit' => [
+                    'title' => 'Éditer la Source',
+                ],
+            ],
+        ],
+
+        'workflows' => [
+            'index' => [
+                'title'          => 'Flux de Travail',
+                'create-btn'     => 'Créer un Flux de Travail',
+                'create-success' => 'Flux de travail créé avec succès.',
+                'update-success' => 'Flux de travail mis à jour avec succès.',
+                'delete-success' => 'Flux de travail supprimé avec succès.',
+                'delete-failed'  => 'Le flux de travail ne peut pas être supprimé.',
+
+                'datagrid'       => [
+                    'delete'      => 'Supprimer',
+                    'description' => 'Description',
+                    'edit'        => 'Éditer',
+                    'id'          => 'ID',
+                    'name'        => 'Nom',
+                ],
+            ],
+
+            'helpers' => [
+                'update-related-leads'       => 'Mettre à jour les prospects associés',
+                'send-email-to-sales-owner'  => 'Envoyer un email au propriétaire des ventes',
+                'send-email-to-participants' => 'Envoyer un email aux participants',
+                'add-webhook'                => 'Ajouter un Webhook',
+                'update-lead'                => 'Mettre à jour le Prospect',
+                'update-person'              => 'Mettre à jour la Personne',
+                'send-email-to-person'       => 'Envoyer un email à la personne',
+                'add-tag'                    => 'Ajouter un Tag',
+                'add-note-as-activity'       => 'Ajouter une Note comme Activité',
+                'update-quote'               => 'Mettre à jour le Devis',
+            ],
+
+            'create' => [
+                'title'                  => 'Créer un Flux de Travail',
+                'event'                  => 'Événement',
+                'back-btn'               => 'Retour',
+                'save-btn'               => 'Enregistrer le Flux de Travail',
+                'name'                   => 'Nom',
+                'basic-details'          => 'Détails de Base',
+                'description'            => 'Description',
+                'actions'                => 'Actions',
+                'basic-details-info'     => 'Entrez les informations de base du flux de travail.',
+                'event-info'             => 'Un événement déclenche, vérifie, conditionne et exécute des actions prédéfinies.',
+                'conditions'             => 'Conditions',
+                'conditions-info'        => 'Les conditions sont des règles vérifiant des scénarios, déclenchées à des occasions spécifiques.',
+                'actions-info'           => 'Une action réduit non seulement la charge de travail mais facilite également l\'automatisation du CRM',
+                'value'                  => 'Valeur',
+                'condition-type'         => 'Type de Condition',
+                'all-condition-are-true' => 'Toutes les conditions sont vraies',
+                'any-condition-are-true' => 'Au moins une condition est vraie',
+                'add-condition'          => 'Ajouter une Condition',
+                'add-action'             => 'Ajouter une Action',
+                'yes'                    => 'Oui',
+                'no'                     => 'Non',
+                'email'                  => 'Email',
+                'is-equal-to'            => 'Est égal à',
+                'is-not-equal-to'        => 'N\'est pas égal à',
+                'equals-or-greater-than' => 'Égal ou supérieur à',
+                'equals-or-less-than'    => 'Égal ou inférieur à',
+                'greater-than'           => 'Supérieur à',
+                'less-than'              => 'Inférieur à',
+                'type'                   => 'Type',
+                'contain'                => 'Contient',
+                'contains'               => 'Contient',
+                'does-not-contain'       => 'Ne contient pas',
+            ],
+
+            'edit' => [
+                'title'                  => 'Éditer le Flux de Travail',
+                'event'                  => 'Événement',
+                'back-btn'               => 'Retour',
+                'save-btn'               => 'Enregistrer le Flux de Travail',
+                'name'                   => 'Nom',
+                'basic-details'          => 'Détails de Base',
+                'description'            => 'Description',
+                'actions'                => 'Actions',
+                'type'                   => 'Type',
+                'basic-details-info'     => 'Entrez les informations de base du flux de travail.',
+                'event-info'             => 'Un événement déclenche, vérifie, conditionne et exécute des actions prédéfinies.',
+                'conditions'             => 'Conditions',
+                'conditions-info'        => 'Les conditions sont des règles vérifiant des scénarios, déclenchées à des occasions spécifiques.',
+                'actions-info'           => 'Une action réduit non seulement la charge de travail mais facilite également l\'automatisation du CRM',
+                'value'                  => 'Valeur',
+                'condition-type'         => 'Type de Condition',
+                'all-condition-are-true' => 'Toutes les conditions sont vraies',
+                'any-condition-are-true' => 'Au moins une condition est vraie',
+                'add-condition'          => 'Ajouter une Condition',
+                'add-action'             => 'Ajouter une Action',
+                'yes'                    => 'Oui',
+                'no'                     => 'Non',
+                'email'                  => 'Email',
+                'is-equal-to'            => 'Est égal à',
+                'is-not-equal-to'        => 'N\'est pas égal à',
+                'equals-or-greater-than' => 'Égal ou supérieur à',
+                'equals-or-less-than'    => 'Égal ou inférieur à',
+                'greater-than'           => 'Supérieur à',
+                'less-than'              => 'Inférieur à',
+                'contain'                => 'Contient',
+                'contains'               => 'Contient',
+                'does-not-contain'       => 'Ne contient pas',
+            ],
+        ],
+
+        'webforms' => [
+            'index' => [
+                'title'          => 'Webforms',
+                'create-btn'     => 'Créer un Webform',
+                'create-success' => 'Webform créé avec succès.',
+                'update-success' => 'Webform mis à jour avec succès.',
+                'delete-success' => 'Webform supprimé avec succès.',
+                'delete-failed'  => 'Le webform ne peut pas être supprimé.',
+
+                'datagrid'       => [
+                    'id'     => 'ID',
+                    'title'  => 'Titre',
+                    'edit'   => 'Éditer',
+                    'delete' => 'Supprimer',
+                ],
+            ],
+
+            'create' => [
+                'title'                    => 'Créer un Webform',
+                'add-attribute-btn'        => 'Ajouter un Bouton d\'Attribut',
+                'attribute-label-color'    => 'Couleur du Label de l\'Attribut',
+                'attributes'               => 'Attributs',
+                'attributes-info'          => 'Ajouter des attributs personnalisés au formulaire.',
+                'background-color'         => 'Couleur de Fond',
+                'create-lead'              => 'Créer un Prospect',
+                'customize-webform'        => 'Personnaliser le Webform',
+                'customize-webform-info'   => 'Personnalisez votre formulaire web avec les couleurs d\'éléments de votre choix.',
+                'description'              => 'Description',
+                'display-custom-message'   => 'Afficher un message personnalisé',
+                'form-background-color'    => 'Couleur de Fond du Formulaire',
+                'form-submit-btn-color'    => 'Couleur du Bouton de Soumission du Formulaire',
+                'form-submit-button-color' => 'Couleur du Bouton de Soumission du Formulaire',
+                'form-title-color'         => 'Couleur du Titre du Formulaire',
+                'general'                  => 'Général',
+                'leads'                    => 'Prospects',
+                'person'                   => 'Personne',
+                'save-btn'                 => 'Enregistrer le Webform',
+                'submit-button-label'      => 'Label du Bouton de Soumission',
+                'submit-success-action'    => 'Action de Succès de Soumission',
+                'redirect-to-url'          => 'Rediriger vers l\'URL',
+                'choose-value'             => 'Choisir la Valeur',
+                'select-file'              => 'Sélectionner un Fichier',
+                'select-image'             => 'Sélectionner une Image',
+                'enter-value'              => 'Entrer la Valeur',
+            ],
+
+            'edit' => [
+                'title'                     => 'Éditer le Webform',
+                'add-attribute-btn'         => 'Ajouter un Bouton d\'Attribut',
+                'attribute-label-color'     => 'Couleur du Label de l\'Attribut',
+                'attributes'                => 'Attributs',
+                'attributes-info'           => 'Ajouter des attributs personnalisés au formulaire.',
+                'background-color'          => 'Couleur de Fond',
+                'code-snippet'              => 'Extrait de Code',
+                'copied'                    => 'Copié',
+                'copy'                      => 'Copier',
+                'create-lead'               => 'Créer un Prospect',
+                'customize-webform'         => 'Personnaliser le Webform',
+                'customize-webform-info'    => 'Personnalisez votre formulaire web avec les couleurs d\'éléments de votre choix.',
+                'description'               => 'Description',
+                'display-custom-message'    => 'Afficher un message personnalisé',
+                'embed'                     => 'Intégrer',
+                'form-background-color'     => 'Couleur de Fond du Formulaire',
+                'form-submit-btn-color'     => 'Couleur du Bouton de Soumission du Formulaire',
+                'form-submit-button-color'  => 'Couleur du Bouton de Soumission du Formulaire',
+                'form-title-color'          => 'Couleur du Titre du Formulaire',
+                'general'                   => 'Général',
+                'preview'                   => 'Aperçu',
+                'person'                    => 'Personne',
+                'public-url'                => 'URL Publique',
+                'redirect-to-url'           => 'Rediriger vers l\'URL',
+                'save-btn'                  => 'Enregistrer le Webform',
+                'submit-button-label'       => 'Label du Bouton de Soumission',
+                'submit-success-action'     => 'Action de Succès de Soumission',
+                'choose-value'              => 'Choisir la Valeur',
+                'select-file'               => 'Sélectionner un Fichier',
+                'select-image'              => 'Sélectionner une Image',
+                'enter-value'               => 'Entrer la Valeur',
+            ],
+        ],
+
+        'email-template' => [
+            'index' => [
+                'create-btn'     => 'Créer un Modèle d’Email',
+                'title'          => 'Modèles d’Email',
+                'create-success' => 'Modèle d’Email créé avec succès.',
+                'update-success' => 'Modèle d’Email mis à jour avec succès.',
+                'delete-success' => 'Modèle d’Email supprimé avec succès.',
+                'delete-failed'  => 'Le modèle d’email ne peut pas être supprimé.',
+
+                'datagrid'   => [
+                    'delete'       => 'Supprimer',
+                    'edit'         => 'Éditer',
+                    'id'           => 'ID',
+                    'name'         => 'Nom',
+                    'subject'      => 'Sujet',
+                ],
+            ],
+
+            'create'     => [
+                'title'                => 'Créer un Modèle d’Email',
+                'save-btn'             => 'Enregistrer le Modèle d’Email',
+                'email-template'       => 'Modèle d’Email',
+                'subject'              => 'Sujet',
+                'content'              => 'Contenu',
+                'subject-placeholders' => 'Placeholders du Sujet',
+                'general'              => 'Général',
+                'name'                 => 'Nom',
+            ],
+
+            'edit' => [
+                'title'                => 'Éditer le Modèle d’Email',
+                'save-btn'             => 'Enregistrer le Modèle d’Email',
+                'email-template'       => 'Modèle d’Email',
+                'subject'              => 'Sujet',
+                'content'              => 'Contenu',
+                'subject-placeholders' => 'Placeholders du Sujet',
+                'general'              => 'Général',
+                'name'                 => 'Nom',
+            ],
+        ],
+
+        'tags' => [
+            'index' => [
+                'create-btn'     => 'Créer un Tag',
+                'title'          => 'Tags',
+                'create-success' => 'Tag créé avec succès.',
+                'update-success' => 'Tag mis à jour avec succès.',
+                'delete-success' => 'Tag supprimé avec succès.',
+                'delete-failed'  => 'Le tag ne peut pas être supprimé.',
+
+                'datagrid' => [
+                    'delete'      => 'Supprimer',
+                    'edit'        => 'Éditer',
+                    'id'          => 'ID',
+                    'name'        => 'Nom',
+                    'users'       => 'Utilisateurs',
+                    'created-at'  => 'Créé le',
+                ],
+
+                'create' => [
+                    'name'     => 'Nom',
+                    'save-btn' => 'Enregistrer le Tag',
+                    'title'    => 'Créer un Tag',
+                    'color'    => 'Couleur',
+                ],
+
+                'edit' => [
+                    'title' => 'Éditer le Tag',
+                ],
+            ],
+        ],
+
+        'users' => [
+            'index' => [
+                'create-btn'          => 'Créer un Utilisateur',
+                'create-success'      => 'Utilisateur créé avec succès.',
+                'delete-failed'       => 'L\'utilisateur ne peut pas être supprimé.',
+                'delete-success'      => 'Utilisateur supprimé avec succès.',
+                'last-delete-error'   => 'Au moins un utilisateur est requis.',
+                'mass-delete-failed'  => 'Les utilisateurs ne peuvent pas être supprimés.',
+                'mass-delete-success' => 'Utilisateurs supprimés avec succès.',
+                'mass-update-failed'  => 'Les utilisateurs ne peuvent pas être mis à jour.',
+                'mass-update-success' => 'Utilisateurs mis à jour avec succès.',
+                'title'               => 'Utilisateurs',
+                'update-success'      => 'Utilisateur mis à jour avec succès.',
+                'user-define-error'   => 'Impossible de supprimer un utilisateur système.',
+                'active'              => 'Actif',
+                'inactive'            => 'Inactif',
+
+                'datagrid' => [
+                    'active'        => 'Actif',
+                    'created-at'    => 'Créé le',
+                    'delete'        => 'Supprimer',
+                    'edit'          => 'Éditer',
+                    'email'         => 'Email',
+                    'id'            => 'ID',
+                    'inactive'      => 'Inactif',
+                    'name'          => 'Nom',
+                    'status'        => 'Statut',
+                    'update-status' => 'Mettre à jour le Statut',
+                    'users'         => 'Utilisateurs',
+                ],
+
+                'create' => [
+                    'confirm-password' => 'Confirmer le Mot de Passe',
+                    'email'            => 'Email',
+                    'general'          => 'Général',
+                    'global'           => 'Global',
+                    'group'            => 'Groupe',
+                    'individual'       => 'Individuel',
+                    'name'             => 'Nom',
+                    'password'         => 'Mot de Passe',
+                    'permission'       => 'Permission',
+                    'role'             => 'Rôle',
+                    'save-btn'         => 'Enregistrer l\'Utilisateur',
+                    'status'           => 'Statut',
+                    'title'            => 'Créer un Utilisateur',
+                    'view-permission'  => 'Voir la Permission',
+                ],
+
+                'edit' => [
+                    'title' => 'Éditer l\'Utilisateur',
+                ],
+            ],
+        ],
+
+        'pipelines' => [
+            'index' => [
+                'title'                => 'Pipelines',
+                'create-btn'           => 'Créer un Pipeline',
+                'create-success'       => 'Pipeline créé avec succès.',
+                'update-success'       => 'Pipeline mis à jour avec succès.',
+                'delete-success'       => 'Pipeline supprimé avec succès.',
+                'delete-failed'        => 'Le pipeline ne peut pas être supprimé.',
+                'default-delete-error' => 'Le pipeline par défaut ne peut pas être supprimé.',
+
+                'datagrid' => [
+                    'delete'      => 'Supprimer',
+                    'edit'        => 'Éditer',
+                    'id'          => 'ID',
+                    'is-default'  => 'Est par Défaut',
+                    'name'        => 'Nom',
+                    'no'          => 'Non',
+                    'rotten-days' => 'Jours de Pourriture',
+                    'yes'         => 'Oui',
+                ],
+            ],
+
+            'create' => [
+                'title'                => 'Créer un Pipeline',
+                'save-btn'             => 'Enregistrer le Pipeline',
+                'name'                 => 'Nom',
+                'rotten-days'          => 'Jours de Pourriture',
+                'mark-as-default'      => 'Marquer comme Par Défaut',
+                'general'              => 'Général',
+                'probability'          => 'Probabilité(%)',
+                'new-stage'            => 'Nouveau',
+                'won-stage'            => 'Gagné',
+                'lost-stage'           => 'Perdu',
+                'stage-btn'            => 'Ajouter une Étape',
+                'stages'               => 'Étapes',
+                'duplicate-name'       => 'Le champ "Nom" ne peut pas être dupliqué',
+                'delete-stage'         => 'Supprimer l\'Étape',
+                'add-new-stages'       => 'Ajouter de Nouvelles Étapes',
+                'add-stage-info'       => 'Ajouter une nouvelle étape à votre Pipeline',
+                'newly-added'          => 'Nouveaulement Ajouté',
+                'stage-delete-success' => 'Étape Supprimée avec Succès',
+            ],
+
+            'edit'  => [
+                'title'                => 'Éditer le Pipeline',
+                'save-btn'             => 'Enregistrer le Pipeline',
+                'name'                 => 'Nom',
+                'rotten-days'          => 'Jours de Pourriture',
+                'mark-as-default'      => 'Marquer comme Par Défaut',
+                'general'              => 'Général',
+                'probability'          => 'Probabilité(%)',
+                'new-stage'            => 'Nouveau',
+                'won-stage'            => 'Gagné',
+                'lost-stage'           => 'Perdu',
+                'stage-btn'            => 'Ajouter une Étape',
+                'stages'               => 'Étapes',
+                'duplicate-name'       => 'Le champ "Nom" ne peut pas être dupliqué',
+                'delete-stage'         => 'Supprimer l\'Étape',
+                'add-new-stages'       => 'Ajouter de Nouvelles Étapes',
+                'add-stage-info'       => 'Ajouter une nouvelle étape à votre Pipeline',
+                'stage-delete-success' => 'Étape Supprimée avec Succès',
+            ],
+        ],
+
+        'webhooks' => [
+            'index' => [
+                'title'          => 'Webhooks',
+                'create-btn'     => 'Créer un Webhook',
+                'create-success' => 'Webhook créé avec succès.',
+                'update-success' => 'Webhook mis à jour avec succès.',
+                'delete-success' => 'Webhook supprimé avec succès.',
+                'delete-failed'  => 'Le webhook ne peut pas être supprimé.',
+
+                'datagrid' => [
+                    'id'          => 'ID',
+                    'delete'      => 'Supprimer',
+                    'edit'        => 'Éditer',
+                    'name'        => 'Nom',
+                    'entity-type' => 'Type d\'Entité',
+                    'end-point'   => 'Point de Terminaison',
+                ],
+            ],
+
+            'create' => [
+                'title'                 => 'Créer un Webhook',
+                'save-btn'              => 'Enregistrer le Webhook',
+                'info'                  => 'Entrez les détails des webhooks',
+                'url-and-parameters'    => 'URL et Paramètres',
+                'method'                => 'Méthode',
+                'post'                  => 'Post',
+                'put'                   => 'Put',
+                'url-endpoint'          => 'Point de Terminaison de l\'URL',
+                'parameters'            => 'Paramètres',
+                'add-new-parameter'     => 'Ajouter un Nouveau Paramètre',
+                'url-preview'           => 'Aperçu de l\'URL :',
+                'headers'               => 'En-têtes',
+                'add-new-header'        => 'Ajouter un Nouvel En-tête',
+                'body'                  => 'Corps',
+                'default'               => 'Par Défaut',
+                'x-www-form-urlencoded' => 'x-www-form-urlencoded',
+                'key-and-value'         => 'Clé et Valeur',
+                'add-new-payload'       => 'Ajouter une nouvelle charge utile',
+                'raw'                   => 'Brut',
+                'general'               => 'Général',
+                'name'                  => 'Nom',
+                'entity-type'           => 'Type d\'Entité',
+                'insert-placeholder'    => 'Insérer le Placeholder',
+                'description'           => 'Description',
+                'json'                  => 'Json',
+                'text'                  => 'Texte',
+            ],
+
+            'edit' => [
+                'title'                 => 'Éditer le Webhook',
+                'edit-btn'              => 'Enregistrer le Webhook',
+                'save-btn'              => 'Enregistrer le Webhook',
+                'info'                  => 'Entrez les détails des webhooks',
+                'url-and-parameters'    => 'URL et Paramètres',
+                'method'                => 'Méthode',
+                'post'                  => 'Post',
+                'put'                   => 'Put',
+                'url-endpoint'          => 'Point de Terminaison de l\'URL',
+                'parameters'            => 'Paramètres',
+                'add-new-parameter'     => 'Ajouter un Nouveau Paramètre',
+                'url-preview'           => 'Aperçu de l\'URL :',
+                'headers'               => 'En-têtes',
+                'add-new-header'        => 'Ajouter un Nouvel En-tête',
+                'body'                  => 'Corps',
+                'default'               => 'Par Défaut',
+                'x-www-form-urlencoded' => 'x-www-form-urlencoded',
+                'key-and-value'         => 'Clé et Valeur',
+                'add-new-payload'       => 'Ajouter une nouvelle charge utile',
+                'raw'                   => 'Brut',
+                'general'               => 'Général',
+                'name'                  => 'Nom',
+                'entity-type'           => 'Type d\'Entité',
+                'insert-placeholder'    => 'Insérer le Placeholder',
+                'description'           => 'Description',
+                'json'                  => 'Json',
+                'text'                  => 'Texte',
+            ],
+        ],
+
+        'warehouses' => [
+            'index' => [
+                'title'          => 'Entrepôts',
+                'create-btn'     => 'Créer un Entrepôt',
+                'create-success' => 'Entrepôt créé avec succès.',
+                'name-exists'    => 'Le nom de l\'entrepôt existe déjà.',
+                'update-success' => 'Entrepôt mis à jour avec succès.',
+                'delete-success' => 'Entrepôt supprimé avec succès.',
+                'delete-failed'  => 'L\'entrepôt ne peut pas être supprimé.',
+
+                'datagrid' => [
+                    'id'              => 'ID',
+                    'name'            => 'Nom',
+                    'contact-name'    => 'Nom du Contact',
+                    'delete'          => 'Supprimer',
+                    'edit'            => 'Éditer',
+                    'view'            => 'Voir',
+                    'created-at'      => 'Créé le',
+                    'products'        => 'Produits',
+                    'contact-emails'  => 'Emails du Contact',
+                    'contact-numbers' => 'Numéros du Contact',
+                ],
+            ],
+
+            'create' => [
+                'title'         => 'Créer un Entrepôt',
+                'save-btn'      => 'Enregistrer l\'Entrepôt',
+                'contact-info'  => 'Informations de Contact',
+            ],
+
+            'edit' => [
+                'title'         => 'Éditer l\'Entrepôt',
+                'save-btn'      => 'Enregistrer l\'Entrepôt',
+                'contact-info'  => 'Informations de Contact',
+            ],
+
+            'view' => [
+                'all'         => 'Tout',
+                'notes'       => 'Notes',
+                'files'       => 'Fichiers',
+                'location'    => 'Lieu',
+                'change-logs' => 'Historique des modifications',
+
+                'locations' => [
+                    'action'         => 'Action',
+                    'add-location'   => 'Ajouter un Lieu',
+                    'create-success' => 'Lieu créé avec succès.',
+                    'delete'         => 'Supprimer',
+                    'delete-failed'  => 'Le lieu ne peut pas être supprimé.',
+                    'delete-success' => 'Lieu supprimé avec succès.',
+                    'name'           => 'Nom',
+                    'save-btn'       => 'Enregistrer',
+                ],
+
+                'general-information' => [
+                    'title' => 'Informations Générales',
+                ],
+
+                'contact-information' => [
+                    'title' => 'Informations de Contact',
+                ],
+            ],
+        ],
+
+        'attributes' => [
+            'index' => [
+                'title'              => 'Attributs',
+                'create-btn'         => 'Créer un Attribut',
+                'create-success'     => 'Attribut créé avec succès.',
+                'update-success'     => 'Attribut mis à jour avec succès.',
+                'delete-success'     => 'Attribut supprimé avec succès.',
+                'delete-failed'      => 'L\'attribut ne peut pas être supprimé.',
+                'user-define-error'  => 'Impossible de supprimer un attribut système.',
+                'mass-delete-failed' => 'Les attributs système ne peuvent pas être supprimés.',
+
+                'datagrid' => [
+                    'yes'         => 'Oui',
+                    'no'          => 'Non',
+                    'id'          => 'ID',
+                    'code'        => 'Code',
+                    'name'        => 'Nom',
+                    'entity-type' => 'Type d\'Entité',
+                    'type'        => 'Type',
+                    'is-default'  => 'Est par Défaut',
+                    'edit'        => 'Éditer',
+                    'delete'      => 'Supprimer',
+                ],
+            ],
+
+            'create'  => [
+                'title'                 => 'Créer un Attribut',
+                'save-btn'              => 'Enregistrer l\'Attribut',
+                'code'                  => 'Code',
+                'name'                  => 'Nom',
+                'entity-type'           => 'Type d\'Entité',
+                'type'                  => 'Type',
+                'validations'           => 'Validations',
+                'is-required'           => 'Est Requis',
+                'input-validation'      => 'Validation de l\'Entrée',
+                'is-unique'             => 'Est Unique',
+                'labels'                => 'Labels',
+                'general'               => 'Général',
+                'numeric'               => 'Numérique',
+                'decimal'               => 'Décimal',
+                'url'                   => 'URL',
+                'options'               => 'Options',
+                'option-type'           => 'Type d\'Option',
+                'lookup-type'           => 'Type de Recherche',
+                'add-option'            => 'Ajouter une Option',
+                'save-option'           => 'Enregistrer l\'Option',
+                'option-name'           => 'Nom de l\'Option',
+                'add-attribute-options' => 'Ajouter des Options d\'Attribut',
+                'text'                  => 'Texte',
+                'textarea'              => 'Zone de Texte',
+                'price'                 => 'Prix',
+                'boolean'               => 'Booléen',
+                'select'                => 'Sélectionner',
+                'multiselect'           => 'Sélection Multiple',
+                'email'                 => 'Email',
+                'address'               => 'Adresse',
+                'phone'                 => 'Téléphone',
+                'datetime'              => 'Date et Heure',
+                'date'                  => 'Date',
+                'image'                 => 'Image',
+                'file'                  => 'Fichier',
+                'lookup'                => 'Recherche',
+                'entity_type'           => 'Type d\'Entité',
+                'checkbox'              => 'Case à cocher',
+                'is_required'           => 'Est Requis',
+                'is_unique'             => 'Est Unique',
+                'actions'               => 'Actions',
+            ],
+
+            'edit'  => [
+                'title'                 => 'Éditer l\'Attribut',
+                'save-btn'              => 'Enregistrer l\'Attribut',
+                'code'                  => 'Code',
+                'name'                  => 'Nom',
+                'labels'                => 'Labels',
+                'entity-type'           => 'Type d\'Entité',
+                'type'                  => 'Type',
+                'validations'           => 'Validations',
+                'is-required'           => 'Est Requis',
+                'input-validation'      => 'Validation de l\'Entrée',
+                'is-unique'             => 'Est Unique',
+                'general'               => 'Général',
+                'numeric'               => 'Numérique',
+                'decimal'               => 'Décimal',
+                'url'                   => 'URL',
+                'options'               => 'Options',
+                'option-type'           => 'Type d\'Option',
+                'lookup-type'           => 'Type de Recherche',
+                'add-option'            => 'Ajouter une Option',
+                'save-option'           => 'Enregistrer l\'Option',
+                'option-name'           => 'Nom de l\'Option',
+                'add-attribute-options' => 'Ajouter des Options d\'Attribut',
+                'text'                  => 'Texte',
+                'textarea'              => 'Zone de Texte',
+                'price'                 => 'Prix',
+                'boolean'               => 'Booléen',
+                'select'                => 'Sélectionner',
+                'multiselect'           => 'Sélection Multiple',
+                'email'                 => 'Email',
+                'address'               => 'Adresse',
+                'phone'                 => 'Téléphone',
+                'datetime'              => 'Date et Heure',
+                'date'                  => 'Date',
+                'image'                 => 'Image',
+                'file'                  => 'Fichier',
+                'lookup'                => 'Recherche',
+                'entity_type'           => 'Type d\'Entité',
+                'checkbox'              => 'Case à cocher',
+                'is_required'           => 'Est Requis',
+                'is_unique'             => 'Est Unique',
+                'actions'               => 'Actions',
+            ],
+        ],
+    ],
+
+    'activities' => [
+        'index' => [
+            'title'      => 'Activités',
+
+            'datagrid' => [
+                'comment'       => 'Commentaire',
+                'created_at'    => 'Créé le',
+                'created_by'    => 'Créé par',
+                'edit'          => 'Éditer',
+                'id'            => 'ID',
+                'done'          => 'Terminé',
+                'not-done'      => 'Non Terminé',
+                'lead'          => 'Prospect',
+                'mass-delete'   => 'Suppression en Masse',
+                'mass-update'   => 'Mise à jour en Masse',
+                'schedule-from' => 'Prévoir De',
+                'schedule-to'   => 'Prévoir Jusqu\'à',
+                'schedule_from' => 'Prévoir De',
+                'schedule_to'   => 'Prévoir Jusqu\'à',
+                'title'         => 'Titre',
+                'is_done'       => 'Est Terminé',
+                'type'          => 'Type',
+                'update'        => 'Mettre à jour',
+                'call'          => 'Appel',
+                'meeting'       => 'Réunion',
+                'lunch'         => 'Déjeuner',
+            ],
+        ],
+
+        'edit' => [
+            'title'           => 'Éditer l\'Activité',
+            'back-btn'        => 'Retour',
+            'save-btn'        => 'Enregistrer l\'Activité',
+            'type'            => 'Type d\'Activité',
+            'call'            => 'Appel',
+            'meeting'         => 'Réunion',
+            'lunch'           => 'Déjeuner',
+            'schedule_to'     => 'Prévoir Jusqu\'à',
+            'schedule_from'   => 'Prévoir De',
+            'location'        => 'Lieu',
+            'comment'         => 'Commentaire',
+            'lead'            => 'Prospect',
+            'participants'    => 'Participants',
+            'general'         => 'Général',
+            'persons'         => 'Personnes',
+            'no-result-found' => 'Enregistrements non trouvés.',
+            'users'           => 'Utilisateurs',
+        ],
+
+        'updated'              => 'Mis à jour :attribute',
+        'created'              => 'Créé',
+        'duration-overlapping' => 'Les participants ont une autre réunion à cette heure. Voulez-vous continuer ?',
+        'create-success'       => 'Activité créée avec succès.',
+        'update-success'       => 'Activité mise à jour avec succès.',
+        'overlapping-error'    => 'Les participants ont une autre réunion à cette heure.',
+        'destroy-success'      => 'Activité supprimée avec succès.',
+        'delete-failed'        => 'L\'activité ne peut pas être supprimée.',
+        'mass-update-success'  => 'Activités mises à jour avec succès.',
+        'mass-destroy-success' => 'Activités supprimées avec succès.',
+        'mass-delete-failed'   => 'Les activités ne peuvent pas être supprimées.',
+    ],
+
+    'mail' => [
+        'index' => [
+            'compose'           => 'Composer',
+            'draft'             => 'Brouillon',
+            'inbox'             => 'Boîte de réception',
+            'outbox'            => 'Boîte d\'envoi',
+            'sent'              => 'Envoyés',
+            'trash'             => 'Corbeille',
+            'compose-mail-btn'  => 'Composer un Mail',
+            'btn'               => 'Mail',
+
+            'mail' => [
+                'title'         => 'Composer un Mail',
+                'to'            => 'À',
+                'enter-emails'  => 'Appuyez sur Entrée pour ajouter des emails',
+                'cc'            => 'CC',
+                'bcc'           => 'BCC',
+                'subject'       => 'Sujet',
+                'send-btn'      => 'Envoyer',
+                'message'       => 'Message',
+                'draft'         => 'Brouillon',
+            ],
+
+            'datagrid' => [
+                'id'            => 'ID',
+                'from'          => 'De',
+                'to'            => 'À',
+                'subject'       => 'Sujet',
+                'tag-name'      => 'Nom du Tag',
+                'created-at'    => 'Créé le',
+                'move-to-inbox' => 'Déplacer vers la Boîte de Réception',
+                'edit'          => 'Éditer',
+                'view'          => 'Voir',
+                'delete'        => 'Supprimer',
+            ],
+        ],
+
+        'create-success'      => 'Email envoyé avec succès.',
+        'update-success'      => 'Email mis à jour avec succès.',
+        'mass-update-success' => 'Emails mis à jour avec succès.',
+        'delete-success'      => 'Email supprimé avec succès.',
+        'delete-failed'       => 'L\'email ne peut pas être supprimé.',
+
+        'view' => [
+            'title'                      => 'Mails',
+            'subject'                    => ':subject',
+            'link-mail'                  => 'Lier le Mail',
+            'to'                         => 'À',
+            'cc'                         => 'CC',
+            'bcc'                        => 'BCC',
+            'reply'                      => 'Répondre',
+            'reply-all'                  => 'Répondre à Tous',
+            'forward'                    => 'Transférer',
+            'delete'                     => 'Supprimer',
+            'enter-mails'                => 'Entrer l\'id de l\'email',
+            'rotten-days'                => 'Le prospect est pourri depuis :days jours',
+            'search-an-existing-lead'    => 'Rechercher un prospect existant',
+            'search-an-existing-contact' => 'Rechercher un contact existant',
+            'message'                    => 'Message',
+            'add-attachments'            => 'Ajouter des Pièces Jointes',
+            'discard'                    => 'Annuler',
+            'send'                       => 'Envoyer',
+            'no-result-found'            => 'Aucun Résultat trouvé',
+            'add-new-contact'            => 'Ajouter un Nouveau Contact',
+            'description'                => 'Description',
+            'search'                     => 'Recherche...',
+            'add-new-lead'               => 'Ajouter un Nouveau Prospect',
+            'create-new-contact'         => 'Créer un Nouveau Contact',
+            'save-contact'               => 'Enregistrer le Contact',
+            'create-lead'                => 'Créer un Prospect',
+            'linked-contact'             => 'Contact Lié',
+            'link-to-contact'            => 'Lier au Contact',
+            'link-to-lead'               => 'Lier au Prospect',
+            'linked-lead'                => 'Prospect Lié',
+            'lead-details'               => 'Détails du Prospect',
+            'contact-person'             => 'Personne à contacter',
+            'product'                    => 'Produit',
+
+            'tags' => [
+                'create-success'  => 'Tag créé avec succès.',
+                'destroy-success' => 'Tag supprimé avec succès.',
+            ],
+        ],
+    ],
+
+    'common' => [
+        'custom-attributes' => [
+            'select-country' => 'Sélectionner un Pays',
+            'select-state'   => 'Sélectionner un État',
+            'state'          => 'État',
+            'city'           => 'Ville',
+            'postcode'       => 'Code Postal',
+            'work'           => 'Travail',
+            'home'           => 'Domicile',
+            'add-more'       => 'Ajouter Plus',
+            'select'         => 'Sélectionner',
+            'country'        => 'Pays',
+            'address'        => 'Adresse',
+        ],
+    ],
+
+    'leads' => [
+        'create-success'    => 'Prospect créé avec succès.',
+        'update-success'    => 'Prospects mis à jour avec succès.',
+        'update-failed'     => 'Les prospects ne peuvent pas être supprimés.',
+        'destroy-success'   => 'Prospect supprimé avec succès.',
+        'destroy-failed'    => 'Le prospect ne peut pas être supprimé.',
+
+        'index' => [
+            'title'      => 'Prospects',
+            'create-btn' => 'Créer un Prospect',
+
+            'datagrid' => [
+                'id'                  => 'ID',
+                'sales-person'        => 'Commercial',
+                'subject'             => 'Sujet',
+                'source'              => 'Source',
+                'lead-value'          => 'Valeur du Prospect',
+                'lead-type'           => 'Type de Prospect',
+                'tag-name'            => 'Nom du Tag',
+                'contact-person'      => 'Personne à contacter',
+                'stage'               => 'Étape',
+                'rotten-lead'         => 'Prospect Pourri',
+                'expected-close-date' => 'Date de Clôture Prévue',
+                'created-at'          => 'Créé le',
+                'no'                  => 'Non',
+                'yes'                 => 'Oui',
+                'delete'              => 'Supprimer',
+                'mass-delete'         => 'Suppression en Masse',
+                'mass-update'         => 'Mise à jour en Masse',
+            ],
+
+            'kanban' => [
+                'rotten-days'            => 'Le prospect est pourri depuis :days jours',
+                'empty-list'             => 'Votre Liste de Prospects est Vide',
+                'empty-list-description' => 'Créez un prospect pour organiser vos objectifs.',
+                'create-lead-btn'        => 'Créer un Prospect',
+
+                'columns' => [
+                    'contact-person'      => 'Personne à contacter',
+                    'id'                  => 'ID',
+                    'lead-type'           => 'Type de Prospect',
+                    'lead-value'          => 'Valeur du Prospect',
+                    'sales-person'        => 'Commercial',
+                    'source'              => 'Source',
+                    'title'               => 'Titre',
+                    'tags'                => 'Tags',
+                    'expected-close-date' => 'Date de Clôture Prévue',
+                    'created-at'          => 'Créé le',
+                ],
+
+                'toolbar' => [
+                    'search' => [
+                        'title' => 'Recherche',
+                    ],
+
+                    'filters' => [
+                        'apply-filters' => 'Appliquer les Filtres',
+                        'clear-all'     => 'Tout Effacer',
+                        'filter'        => 'Filtrer',
+                        'filters'       => 'Filtres',
+                        'select'        => 'Sélectionner',
+                    ],
+                ],
+            ],
+
+            'view-switcher' => [
+                'all-pipelines'       => 'Tous les Pipelines',
+                'create-new-pipeline' => 'Créer un Nouveau Pipeline',
+            ],
+        ],
+
+        'create' => [
+            'title'          => 'Créer un Prospect',
+            'save-btn'       => 'Enregistrer',
+            'details'        => 'Détails',
+            'details-info'   => 'Entrez les Informations de Base du Prospect',
+            'contact-person' => 'Personne à contacter',
+            'contact-info'   => 'Informations sur la Personne à contacter',
+            'products'       => 'Produits',
+            'products-info'  => 'Informations sur les Produits',
+        ],
+
+        'edit' => [
+            'title'          => 'Éditer le Prospect',
+            'save-btn'       => 'Enregistrer',
+            'details'        => 'Détails',
+            'details-info'   => 'Entrez les Informations de Base du Prospect',
+            'contact-person' => 'Personne à contacter',
+            'contact-info'   => 'Informations sur la Personne à contacter',
+            'products'       => 'Produits',
+            'products-info'  => 'Informations sur les Produits',
+        ],
+
+        'common' => [
+            'contact' => [
+                'name'           => 'Nom',
+                'email'          => 'Email',
+                'contact-number' => 'Numéro de Contact',
+                'organization'   => 'Organisation',
+            ],
+
+            'products' => [
+                'product-name' => 'Nom du Produit',
+                'quantity'     => 'Quantité',
+                'price'        => 'Prix',
+                'amount'       => 'Montant',
+                'action'       => 'Action',
+                'add-more'     => 'Ajouter Plus',
+                'total'        => 'Total',
+            ],
+        ],
+
+        'view' => [
+            'title'       => 'Prospect: :title',
+            'rotten-days' => ':days Jours',
+
+            'tabs' => [
+                'description' => 'Description',
+                'products'    => 'Produits',
+                'quotes'      => 'Devis',
+            ],
+
+            'attributes' => [
+                'title' => 'À Propos du Prospect',
+            ],
+
+            'quotes'=> [
+                'subject'         => 'Sujet',
+                'expired-at'      => 'Expire le',
+                'sub-total'       => 'Sous-total',
+                'discount'        => 'Remise',
+                'tax'             => 'Taxe',
+                'adjustment'      => 'Ajustement',
+                'grand-total'     => 'Total Général',
+                'delete'          => 'Supprimer',
+                'edit'            => 'Éditer',
+                'download'        => 'Télécharger',
+                'destroy-success' => 'Devis supprimé avec succès.',
+                'empty-title'     => 'Aucun Devis Trouvé',
+                'empty-info'      => 'Aucun Devis Trouvé pour ce Prospect',
+                'add-btn'         => 'Ajouter un Devis',
+            ],
+
+            'products' => [
+                'product-name' => 'Nom du Produit',
+                'quantity'     => 'Quantité',
+                'price'        => 'Prix',
+                'amount'       => 'Montant',
+                'action'       => 'Action',
+                'add-more'     => 'Ajouter Plus',
+                'total'        => 'Total',
+                'empty-title'  => 'Aucun Produit Trouvé',
+                'empty-info'   => 'Aucun Produit Trouvé pour ce Prospect',
+                'add-product'  => 'Ajouter un Produit',
+            ],
+
+            'persons' => [
+                'title'     => 'À Propos des Personnes',
+                'job-title' => ':job_title chez :organization',
+            ],
+
+            'stages' => [
+                'won-lost'       => 'Gagné/Perdu',
+                'won'            => 'Gagné',
+                'lost'           => 'Perdu',
+                'need-more-info' => 'Besoin de Plus de Détails',
+                'closed-at'      => 'Clôturé le',
+                'won-value'      => 'Valeur Gagnée',
+                'lost-reason'    => 'Raison de Perte',
+                'save-btn'       => 'Enregistrer',
+            ],
+
+            'tags' => [
+                'create-success'  => 'Tag créé avec succès.',
+                'destroy-success' => 'Tag supprimé avec succès.',
+            ],
+        ],
+    ],
+
+    'configuration' => [
+        'index' => [
+            'back'         => 'Retour',
+            'save-btn'     => 'Enregistrer la Configuration',
+            'save-success' => 'Configuration enregistrée avec succès.',
+            'search'       => 'Recherche',
+            'title'        => 'Configuration',
+
+            'general'  => [
+                'title'   => 'Général',
+                'info'    => 'Configuration Générale',
+
+                'general' => [
+                    'title'           => 'Général',
+                    'info'            => 'Mettez à jour vos paramètres généraux ici.',
+                    'locale-settings' => [
+                        'title'       => 'Paramètres de Locale',
+                        'title-info'  => 'Définit la langue utilisée dans l\'interface utilisateur, comme l\'Arabe (ar), l\'Anglais (en), l\'Espagnol (es), le Persan (fa) et le Turc (tr).',
+                    ],
+                ],
+            ],
+        ],
+    ],
+
+    'dashboard' => [
+        'index' => [
+            'title' => 'Tableau de Bord',
+
+            'revenue' => [
+                'lost-revenue' => 'Revenu Perdu',
+                'won-revenue'  => 'Revenu Gagné',
+            ],
+
+            'over-all' => [
+                'average-lead-value'    => 'Valeur Moyenne du Prospect',
+                'total-leads'           => 'Total des Prospects',
+                'average-leads-per-day' => 'Prospects Moyens par Jour',
+                'total-quotations'      => 'Total des Devis',
+                'total-persons'         => 'Total des Personnes',
+                'total-organizations'   => 'Total des Organisations',
+            ],
+
+            'total-leads' => [
+                'title' => 'Prospects',
+                'total' => 'Total des Prospects',
+                'won'   => 'Prospects Gagnés',
+                'lost'  => 'Prospects Perdus',
+            ],
+
+            'revenue-by-sources' => [
+                'title'       => 'Revenu par Sources',
+                'empty-title' => 'Aucune Donnée Disponible',
+                'empty-info'  => 'Aucune donnée disponible pour l\'intervalle sélectionné',
+            ],
+
+            'revenue-by-types' => [
+                'title'       => 'Revenu par Types',
+                'empty-title' => 'Aucune Donnée Disponible',
+                'empty-info'  => 'Aucune donnée disponible pour l\'intervalle sélectionné',
+            ],
+
+            'top-selling-products' => [
+                'title'       => 'Meilleurs Produits',
+                'empty-title' => 'Aucun Produit Trouvé',
+                'empty-info'  => 'Aucun produit disponible pour l\'intervalle sélectionné',
+            ],
+
+            'top-persons' => [
+                'title'       => 'Meilleures Personnes',
+                'empty-title' => 'Aucune Personne Trouvée',
+                'empty-info'  => 'Aucune personne disponible pour l\'intervalle sélectionné',
+            ],
+
+            'open-leads-by-states' => [
+                'title'       => 'Prospects Ouverts par États',
+                'empty-title' => 'Aucune Donnée Disponible',
+                'empty-info'  => 'Aucune donnée disponible pour l\'intervalle sélectionné',
+            ],
+        ],
+    ],
+
+    'layouts' => [
+        'app-version'          => 'Version :version',
+        'dashboard'            => 'Tableau de Bord',
+        'leads'                => 'Prospects',
+        'quotes'               => 'Devis',
+        'quote'                => 'Devis',
+        'mail'                 => [
+            'title'   => 'Mail',
+            'compose' => 'Composer',
+            'inbox'   => 'Boîte de Réception',
+            'draft'   => 'Brouillon',
+            'outbox'  => 'Boîte d\'Envoi',
+            'sent'    => 'Envoyés',
+            'trash'   => 'Corbeille',
+            'setting' => 'Paramètres',
+        ],
+        'activities'           => 'Activités',
+        'contacts'             => 'Contacts',
+        'persons'              => 'Personnes',
+        'person'               => 'Personne',
+        'organizations'        => 'Organisations',
+        'organization'         => 'Organisation',
+        'products'             => 'Produits',
+        'product'              => 'Produit',
+        'settings'             => 'Paramètres',
+        'user'                 => 'Utilisateur',
+        'user-info'            => 'Gérez tous vos utilisateurs et leurs permissions dans le CRM, ce qu\'ils sont autorisés à faire.',
+        'groups'               => 'Groupes',
+        'groups-info'          => 'Ajouter, éditer ou supprimer des groupes depuis le CRM',
+        'roles'                => 'Rôles',
+        'role'                 => 'Rôle',
+        'roles-info'           => 'Ajouter, éditer ou supprimer des rôles depuis le CRM',
+        'users'                => 'Utilisateurs',
+        'users-info'           => 'Ajouter, éditer ou supprimer des utilisateurs depuis le CRM',
+        'lead'                 => 'Prospect',
+        'lead-info'            => 'Gérez tous vos paramètres liés aux prospects dans le CRM',
+        'pipelines'            => 'Pipelines',
+        'pipelines-info'       => 'Ajouter, éditer ou supprimer des pipelines depuis le CRM',
+        'sources'              => 'Sources',
+        'sources-info'         => 'Ajouter, éditer ou supprimer des sources depuis le CRM',
+        'types'                => 'Types',
+        'types-info'           => 'Ajouter, éditer ou supprimer des types depuis le CRM',
+        'automation'           => 'Automatisation',
+        'automation-info'      => 'Gérez tous vos paramètres liés à l\'automatisation dans le CRM',
+        'attributes'           => 'Attributs',
+        'attribute'            => 'Attribut',
+        'attributes-info'      => 'Ajouter, éditer ou supprimer des attributs depuis le CRM',
+        'email-templates'      => 'Modèles d’Email',
+        'email'                => 'Email',
+        'email-templates-info' => 'Ajouter, éditer ou supprimer des modèles d\'email depuis le CRM',
+        'workflows'            => 'Flux de Travail',
+        'workflows-info'       => 'Ajouter, éditer ou supprimer des flux de travail depuis le CRM',
+        'webhooks'             => 'Webhooks',
+        'webhooks-info'        => 'Ajouter, éditer ou supprimer des webhooks depuis le CRM',
+        'other-settings'       => 'Autres Paramètres',
+        'other-settings-info'  => 'Gérez tous vos paramètres supplémentaires dans le CRM',
+        'tags'                 => 'Tags',
+        'tags-info'            => 'Ajouter, éditer ou supprimer des tags depuis le CRM',
+        'my-account'           => 'Mon Compte',
+        'sign-out'             => 'Se Déconnecter',
+        'back'                 => 'Retour',
+        'name'                 => 'Nom',
+        'configuration'        => 'Configuration',
+        'activities'           => 'Activités',
+        'howdy'                => 'Bonjour!',
+        'warehouses'           => 'Entrepôts',
+        'warehouse'            => 'Entrepôt',
+        'warehouses-info'      => 'Ajouter, éditer ou supprimer des entrepôts depuis le CRM',
+    ],
+
+    'user' => [
+        'account' => [
+            'name'                  => 'Nom',
+            'email'                 => 'Email',
+            'password'              => 'Mot de Passe',
+            'my_account'            => 'Mon Compte',
+            'update_details'        => 'Mettre à jour les Détails',
+            'current_password'      => 'Mot de Passe Actuel',
+            'confirm_password'      => 'Confirmer le Mot de Passe',
+            'password-match'        => 'Le mot de passe actuel ne correspond pas.',
+            'account-save'          => 'Les modifications du compte ont été enregistrées avec succès.',
+            'permission-denied'     => 'Permission Refusée',
+            'remove-image'          => 'Supprimer l\'Image',
+            'upload_image_pix'      => 'Télécharger une Image de Profil (100px x 100px)',
+            'upload_image_format'   => 'au Format PNG ou JPG',
+            'image_upload_message'  => 'Seules les images (.jpeg, .jpg, .png, ...) sont autorisées.',
+        ],
+    ],
+
+    'emails' => [
+        'common' => [
+            'dear'   => 'Cher :name',
+            'cheers' => 'Cordialement,</br>Équipe :app_name',
+
+            'user'   => [
+                'dear'           => 'Cher :username',
+                'create-subject' => 'Vous avez été ajouté en tant que membre.',
+                'create-body'    => 'Félicitations! Vous êtes maintenant membre de notre équipe.',
+
+                'forget-password' => [
+                    'subject'           => 'Réinitialisation du Mot de Passe Client',
+                    'dear'              => 'Cher :username',
+                    'reset-password'    => 'Réinitialiser le Mot de Passe',
+                    'info'              => 'Vous recevez cet email car nous avons reçu une demande de réinitialisation du mot de passe pour votre compte',
+                    'final-summary'     => 'Si vous n\'avez pas demandé la réinitialisation du mot de passe, aucune autre action n\'est requise',
+                    'thanks'            => 'Merci!',
+                ],
+            ],
+        ],
+    ],
+
+    'errors' => [
+        'dashboard' => 'Tableau de Bord',
+        'go-back'   => 'Retour',
+        'support'   => 'Si le problème persiste, contactez-nous à <a href=":link" class=":class">:email</a> pour obtenir de l\'aide.',
+
+        '404' => [
+            'description' => 'Oups! La page que vous recherchez est en vacances. Il semble que nous n\'ayons pas pu trouver ce que vous cherchiez.',
+            'title'       => '404 Page Non Trouvée',
+        ],
+
+        '401' => [
+            'description' => 'Oups! Il semble que vous ne soyez pas autorisé à accéder à cette page. Il semble qu\'il vous manque les identifiants nécessaires.',
+            'title'       => '401 Non Autorisé',
+        ],
+
+        '403' => [
+            'description' => 'Oups! Cette page est interdite. Il semble que vous n\'ayez pas les permissions requises pour voir ce contenu.',
+            'title'       => '403 Interdit',
+        ],
+
+        '500' => [
+            'description' => 'Oups! Quelque chose s\'est mal passé. Il semble que nous ayons des problèmes pour charger la page que vous recherchez.',
+            'title'       => '500 Erreur Interne du Serveur',
+        ],
+
+        '503' => [
+            'description' => 'Oups! Il semble que nous soyons temporairement en maintenance. Veuillez revenir plus tard.',
+            'title'       => '503 Service Indisponible',
+        ],
+    ],
+];

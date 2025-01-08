@@ -108,13 +108,14 @@ return [
      */
 
     'available_locales' => [
-        'ar'    => 'Arabic',
+        'fr'    => 'Français',
         'en'    => 'English',
-        'es'    => 'Español',
-        'fa'    => 'Persian',
-        'pt_BR' => 'Portuguese',
-        'tr'    => 'Türkçe',
-        'vi'    => 'Vietnamese',
+        // 'ar'    => 'Arabic',
+        // 'es'    => 'Español',
+        // 'fa'    => 'Persian',
+        // 'pt_BR' => 'Portuguese',
+        // 'tr'    => 'Türkçe',
+        // 'vi'    => 'Vietnamese',
     ],
 
     /*

@@ -1,15 +1,16 @@
-<header class="sticky top-0 z-[10001] flex items-center justify-between border-b border-gray-200 bg-white px-4 py-2.5 transition-all dark:border-gray-800 dark:bg-gray-900">
+<header
+    class="sticky top-0 z-[10001] flex items-center justify-between border-b border-gray-200 bg-white px-4 py-2.5 transition-all dark:border-gray-800 dark:bg-gray-900">
     <!-- logo -->
     <div class="flex items-center gap-1.5">
-        <i class="icon-menu hidden cursor-pointer rounded-md p-1.5 text-2xl hover:bg-gray-100 dark:hover:bg-gray-950 max-lg:block"></i>
+        <i
+            class="icon-menu hidden cursor-pointer rounded-md p-1.5 text-2xl hover:bg-gray-100 dark:hover:bg-gray-950 max-lg:block"></i>
 
-        <a href="{{ route('admin.dashboard.index') }}">
-            <img
-                class="h-10"
-                src="{{ request()->cookie('dark_mode') ? vite()->asset('images/dark-logo.svg') : vite()->asset('images/logo.svg') }}"
-                id="logo-image"
-                alt="{{ config('app.name') }}"
-            />
+        <a href="{{ route('admin.dashboard.index') }}"
+            class="font-semibold text-xl flex items-center gap-2 !dark:text-white">
+            <img class="h-10 rounded-full bg-white"
+                src="https://i0.wp.com/www.elite-capitalgroup.com/wp-content/uploads/2019/09/cropped-favicon.png?fit=192,192&ssl=1"
+                id="logo-simage" alt="{{ config('app.name') }}" />
+                <span class="dark:text-white">Elite Capital CRM</span>
         </a>
     </div>
 
@@ -19,30 +20,28 @@
             <div class="relative flex w-[525px] max-w-[525px] items-center max-lg:w-[400px] ltr:ml-2.5 rtl:mr-2.5">
                 <i class="icon-search absolute top-1.5 flex items-center text-2xl ltr:left-3 rtl:right-3"></i>
 
-                <input
-                    type="text"
+                <input type="text"
                     class="block w-full rounded-3xl border bg-white px-10 py-1.5 leading-6 text-gray-600 transition-all hover:border-gray-400 dark:border-gray-800 dark:bg-gray-900 dark:text-gray-300"
-                    placeholder="@lang('admin::app.components.layouts.header.mega-search.title')"
-                >
+                    placeholder="@lang('admin::app.components.layouts.header.mega-search.title')">
             </div>
         </v-mega-search>
 
         <!-- Quick create section -->
         <div>
-            @if (bouncer()->hasPermission('leads.create')
-                || bouncer()->hasPermission('quotes.create')
-                || bouncer()->hasPermission('mail.create')
-                || bouncer()->hasPermission('contacts.persons.create')
-                || bouncer()->hasPermission('contacts.organizations.create')
-                || bouncer()->hasPermission('products.create')
-                || bouncer()->hasPermission('settings.automation.attributes.create')
-                || bouncer()->hasPermission('settings.user.roles.create')
-                || bouncer()->hasPermission('settings.user.users.create')
-            )
+            @if (bouncer()->hasPermission('leads.create') ||
+                    bouncer()->hasPermission('quotes.create') ||
+                    bouncer()->hasPermission('mail.create') ||
+                    bouncer()->hasPermission('contacts.persons.create') ||
+                    bouncer()->hasPermission('contacts.organizations.create') ||
+                    bouncer()->hasPermission('products.create') ||
+                    bouncer()->hasPermission('settings.automation.attributes.create') ||
+                    bouncer()->hasPermission('settings.user.roles.create') ||
+                    bouncer()->hasPermission('settings.user.users.create'))
                 <x-admin::dropdown position="bottom-right">
                     <x-slot:toggle>
                         <!-- Toggle Button -->
-                        <button class="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-brandColor text-white">
+                        <button
+                            class="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-brandColor text-white">
                             <i class="icon-add text-2xl"></i>
                         </button>
                     </x-slot>
@@ -53,7 +52,8 @@
                             <div class="grid grid-cols-3 gap-2 text-center">
                                 <!-- Link to create new Lead -->
                                 @if (bouncer()->hasPermission('leads.create'))
-                                    <div class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
+                                    <div
+                                        class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
                                         <a href="{{ route('admin.leads.create') }}">
                                             <div class="flex flex-col gap-1">
                                                 <i class="icon-leads text-2xl text-gray-600"></i>
@@ -66,7 +66,8 @@
 
                                 <!-- Link to create new Quotes -->
                                 @if (bouncer()->hasPermission('quotes.create'))
-                                    <div class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
+                                    <div
+                                        class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
                                         <a href="{{ route('admin.quotes.create') }}">
                                             <div class="flex flex-col gap-1">
                                                 <i class="icon-quote text-2xl text-gray-600"></i>
@@ -79,7 +80,8 @@
 
                                 <!-- Link to send new Mail-->
                                 @if (bouncer()->hasPermission('mail.create'))
-                                    <div class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
+                                    <div
+                                        class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
                                         <a href="{{ route('admin.mail.index', ['route' => 'inbox']) }}">
                                             <div class="flex flex-col gap-1">
                                                 <i class="icon-mail text-2xl text-gray-600"></i>
@@ -92,7 +94,8 @@
 
                                 <!-- Link to create new Person-->
                                 @if (bouncer()->hasPermission('contacts.persons.create'))
-                                    <div class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
+                                    <div
+                                        class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
                                         <a href="{{ route('admin.contacts.persons.create') }}">
                                             <div class="flex flex-col gap-1">
                                                 <i class="icon-settings-user text-2xl text-gray-600"></i>
@@ -105,7 +108,8 @@
 
                                 <!-- Link to create new Organizations -->
                                 @if (bouncer()->hasPermission('contacts.organizations.create'))
-                                    <div class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
+                                    <div
+                                        class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
                                         <a href="{{ route('admin.contacts.organizations.create') }}">
                                             <div class="flex flex-col gap-1">
                                                 <i class="icon-organization text-2xl text-gray-600"></i>
@@ -118,7 +122,8 @@
 
                                 <!-- Link to create new Products -->
                                 @if (bouncer()->hasPermission('products.create'))
-                                    <div class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
+                                    <div
+                                        class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
                                         <a href="{{ route('admin.products.create') }}">
                                             <div class="flex flex-col gap-1">
                                                 <i class="icon-product text-2xl text-gray-600"></i>
@@ -131,7 +136,8 @@
 
                                 <!-- Link to create new Attributes -->
                                 @if (bouncer()->hasPermission('settings.automation.attributes.create'))
-                                    <div class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
+                                    <div
+                                        class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
                                         <a href="{{ route('admin.settings.attributes.create') }}">
                                             <div class="flex flex-col gap-1">
                                                 <i class="icon-attribute text-2xl text-gray-600"></i>
@@ -144,7 +150,8 @@
 
                                 <!-- Link to create new Role -->
                                 @if (bouncer()->hasPermission('settings.user.roles.create'))
-                                    <div class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
+                                    <div
+                                        class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
                                         <a href="{{ route('admin.settings.roles.create') }}">
                                             <div class="flex flex-col gap-1">
                                                 <i class="icon-role text-2xl text-gray-600"></i>
@@ -157,7 +164,8 @@
 
                                 <!-- Link to create new User-->
                                 @if (bouncer()->hasPermission('settings.user.users.create'))
-                                    <div class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
+                                    <div
+                                        class="rounded-lg bg-white p-2 hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-950">
                                         <a href="{{ route('admin.settings.users.index') }}">
                                             <div class="flex flex-col gap-1">
                                                 <i class="icon-user text-2xl text-gray-600"></i>
@@ -180,8 +188,7 @@
         <v-dark>
             <div class="flex">
                 <span
-                    class="{{ request()->cookie('dark_mode') ? 'icon-light' : 'icon-dark' }} p-1.5 rounded-md text-2xl cursor-pointer transition-all hover:bg-gray-100 dark:hover:bg-gray-950"
-                ></span>
+                    class="{{ request()->cookie('dark_mode') ? 'icon-light' : 'icon-dark' }} p-1.5 rounded-md text-2xl cursor-pointer transition-all hover:bg-gray-100 dark:hover:bg-gray-950"></span>
             </div>
         </v-dark>
 
@@ -189,14 +196,13 @@
         <x-admin::dropdown position="bottom-{{ in_array(app()->getLocale(), ['fa', 'ar']) ? 'left' : 'right' }}">
             <x-slot:toggle>
                 @if (auth()->guard('user')->user()->image)
-                    <button class="flex h-9 w-9 cursor-pointer overflow-hidden rounded-full hover:opacity-80 focus:opacity-80">
-                        <img
-                            src="{{ auth()->guard('user')->user()->image_url }}"
-                            class="w-full"
-                        />
+                    <button
+                        class="flex h-9 w-9 cursor-pointer overflow-hidden rounded-full hover:opacity-80 focus:opacity-80">
+                        <img src="{{ auth()->guard('user')->user()->image_url }}" class="w-full" />
                     </button>
                 @else
-                    <button class="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-pink-400 font-semibold leading-6 text-white">
+                    <button
+                        class="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full bg-pink-400 font-semibold leading-6 text-white">
                         {{ substr(auth()->guard('user')->user()->name, 0, 1) }}
                     </button>
                 @endif
@@ -204,42 +210,31 @@
 
             <!-- Admin Dropdown -->
             <x-slot:content class="mt-2 border-t-0 !p-0">
-                <div class="flex items-center gap-1.5 border border-x-0 border-b-gray-300 px-5 py-2.5 dark:border-gray-800">
-                    <img
-                        src="{{ url('cache/logo.png') }}"
-                        width="24"
-                        height="24"
-                    />
+                
+
+                <div class="grid gap-1 pb-2.5">
+                    <a class="cursor-pointer px-5 py-2 text-base text-gray-800 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-950"
+                        href="{{ route('admin.user.account.edit') }}">
+                        @lang('admin::app.layouts.my-account')
+                    </a>
+
+                    <!--Admin logout-->
+                    <x-admin::form method="DELETE" action="{{ route('admin.session.destroy') }}" id="adminLogout">
+                    </x-admin::form>
+
+                    <a class="cursor-pointer px-5 py-2 text-base text-gray-800 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-950"
+                        href="{{ route('admin.session.destroy') }}"
+                        onclick="event.preventDefault(); document.getElementById('adminLogout').submit();">
+                        @lang('admin::app.layouts.sign-out')
+                    </a>
+                </div>
+                <div
+                    class="flex items-center gap-1.5 border border-x-0 border-b-gray-300 px-5 py-2.5 dark:border-gray-800">
 
                     <!-- Version -->
                     <p class="text-gray-400">
                         @lang('admin::app.layouts.app-version', ['version' => core()->version()])
                     </p>
-                </div>
-
-                <div class="grid gap-1 pb-2.5">
-                    <a
-                        class="cursor-pointer px-5 py-2 text-base text-gray-800 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-950"
-                        href="{{ route('admin.user.account.edit') }}"
-                    >
-                        @lang('admin::app.layouts.my-account')
-                    </a>
-
-                    <!--Admin logout-->
-                    <x-admin::form
-                        method="DELETE"
-                        action="{{ route('admin.session.destroy') }}"
-                        id="adminLogout"
-                    >
-                    </x-admin::form>
-
-                    <a
-                        class="cursor-pointer px-5 py-2 text-base text-gray-800 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-950"
-                        href="{{ route('admin.session.destroy') }}"
-                        onclick="event.preventDefault(); document.getElementById('adminLogout').submit();"
-                    >
-                        @lang('admin::app.layouts.sign-out')
-                    </a>
                 </div>
             </x-slot>
         </x-admin::dropdown>
@@ -511,7 +506,7 @@
             template: '#v-mega-search-template',
 
             data() {
-                return  {
+                return {
                     activeTab: 'leads',
 
                     isDropdownOpen: false,
@@ -522,8 +517,7 @@
                             title: "@lang('admin::app.components.layouts.header.mega-search.tabs.leads')",
                             is_active: true,
                             endpoint: "{{ route('admin.leads.search') }}",
-                            query_params: [
-                                {
+                            query_params: [{
                                     search: 'title',
                                     searchFields: 'title:like',
                                 },
@@ -543,8 +537,7 @@
                             title: "@lang('admin::app.components.layouts.header.mega-search.tabs.quotes')",
                             is_active: false,
                             endpoint: "{{ route('admin.quotes.search') }}",
-                            query_params: [
-                                {
+                            query_params: [{
                                     search: 'subject',
                                     searchFields: 'subject:like',
                                 },
@@ -568,8 +561,7 @@
                             title: "@lang('admin::app.components.layouts.header.mega-search.tabs.products')",
                             is_active: false,
                             endpoint: "{{ route('admin.products.search') }}",
-                            query_params: [
-                                {
+                            query_params: [{
                                     search: 'name',
                                     searchFields: 'name:like',
                                 },
@@ -589,8 +581,7 @@
                             title: "@lang('admin::app.components.layouts.header.mega-search.tabs.persons')",
                             is_active: false,
                             endpoint: "{{ route('admin.contacts.persons.search') }}",
-                            query_params: [
-                                {
+                            query_params: [{
                                     search: 'name',
                                     searchFields: 'name:like',
                                 },
@@ -667,7 +658,7 @@
                 },
 
                 handleFocusOut(e) {
-                    if (! this.$el.contains(e.target)) {
+                    if (!this.$el.contains(e.target)) {
                         this.isDropdownOpen = false;
                     }
                 },
@@ -727,7 +718,8 @@
 
                     expiryDate.setMonth(expiryDate.getMonth() + 1);
 
-                    document.cookie = 'dark_mode=' + this.isDarkMode + '; path=/; expires=' + expiryDate.toGMTString();
+                    document.cookie = 'dark_mode=' + this.isDarkMode + '; path=/; expires=' + expiryDate
+                        .toGMTString();
 
                     document.documentElement.classList.toggle('dark', this.isDarkMode === 1);
 

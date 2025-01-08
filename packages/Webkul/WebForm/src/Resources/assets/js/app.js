@@ -16,7 +16,7 @@ window.app = createApp({
         return {
             isMenuActive: false,
 
-            hoveringMenu: '',
+            hoveringMenu: "",
         };
     },
 
@@ -24,16 +24,23 @@ window.app = createApp({
         onSubmit() {},
 
         onInvalidSubmit({ values, errors, results }) {
+            console.log({
+                values,
+                errors,
+                results,
+            });
             setTimeout(() => {
                 const errorKeys = Object.entries(errors)
                     .map(([key, value]) => ({ key, value }))
-                    .filter(error => error["value"].length);
+                    .filter((error) => error["value"].length);
 
-                let firstErrorElement = document.querySelector('[name="' + errorKeys[0]["key"] + '"]');
+                let firstErrorElement = document.querySelector(
+                    '[name="' + errorKeys[0]["key"] + '"]'
+                );
 
                 firstErrorElement.scrollIntoView({
                     behavior: "smooth",
-                    block: "center"
+                    block: "center",
                 });
             }, 100);
         },
@@ -47,11 +54,6 @@ import Axios from "./plugins/axios";
 import Emitter from "./plugins/emitter";
 import Flatpickr from "./plugins/flatpickr";
 import VeeValidate from "./plugins/vee-validate";
-[
-    Axios,
-    Emitter,
-    Flatpickr,
-    VeeValidate,
-].forEach((plugin) => app.use(plugin));
+[Axios, Emitter, Flatpickr, VeeValidate].forEach((plugin) => app.use(plugin));
 
 export default app;
