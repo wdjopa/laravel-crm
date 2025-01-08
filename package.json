@@ -3,7 +3,8 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "build:all": "vite build && cd packages/Webkul/Admin && vite build && cd ../../../"
     },
     "devDependencies": {
         "axios": "^1.6.4",

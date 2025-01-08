@@ -237,8 +237,8 @@
     "src": "src/Resources/assets/images/dark-corner-clip.svg"
   },
   "src/Resources/assets/images/dark-logo.svg": {
-    "file": "assets/dark-logo-efbc17e1.svg",
-    "src": "src/Resources/assets/images/dark-logo.svg"
+    "file": "assets/logo-41b0386f.svg",
+    "src": "src/Resources/assets/images/logo.svg"
   },
   "src/Resources/assets/images/empty-placeholders/activities.svg": {
     "file": "assets/activities-94382bdd.svg",
@@ -305,11 +305,11 @@
     "src": "src/Resources/assets/images/error.svg"
   },
   "src/Resources/assets/images/favicon.ico": {
-    "file": "assets/favicon-a99d4e55.ico",
-    "src": "src/Resources/assets/images/favicon.ico"
+    "file": "assets/logo-41b0386f.svg",
+    "src": "src/Resources/assets/images/logo.svg"
   },
   "src/Resources/assets/images/logo.svg": {
-    "file": "assets/logo-0db24d41.svg",
+    "file": "assets/logo-41b0386f.svg",
     "src": "src/Resources/assets/images/logo.svg"
   },
   "src/Resources/assets/js/app.css": {
@@ -366,7 +366,7 @@
       "node_modules/vue-cal/dist/i18n/zh-hk.es.js",
       "node_modules/vue-cal/dist/drag-and-drop.es.js"
     ],
-    "file": "assets/app-ae6a1872.js",
+    "file": "assets/app-7c8e6969.js",
     "isEntry": true,
     "src": "src/Resources/assets/js/app.js"
   },
